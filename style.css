@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#404A65;
+    font-family:Arial,sans-serif;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:15px;
+    text-shadow:4px 4px #2b3245;
+}
+
+p{
+    font-size:20px;
+    color:#D2D5DA;
+    margin-bottom:40px;
+}
+
+.coin-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#coin{
+    width:180px;
+    cursor:pointer;
+}
+
+.shadow{
+    width:140px;
+    margin-top:10px;
+    margin-bottom:35px;
+}
+
+h2{
+    font-size:32px;
+    margin-bottom:35px;
+}
+
+button{
+    background:#1F6FB0;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:15px 40px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 5px #1a5b91;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#16598e;
+}
+
+.author-info{
+    margin-top:40px;
+    font-size:14px;
+    color:#D2D5DA;
+}
+
+.author-info a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Coin Animation */
+
+#coin{
+    width:180px;
+    cursor:pointer;
+}
+.flip{
+    animation:flip 0.9s linear;
+}
+
+@keyframes flip{
+
+    0%{
+        transform:translateY(0) scale(1) rotate(0deg);
+    }
+
+    25%{
+        transform:translateY(-25px) scale(1.05) rotate(360deg);
+    }
+
+    50%{
+        transform:translateY(-45px) scale(1.1) rotate(720deg);
+    }
+
+    75%{
+        transform:translateY(-25px) scale(1.05) rotate(1080deg);
+    }
+
+    100%{
+        transform:translateY(0) scale(1) rotate(1440deg);
+    }
+
+}
